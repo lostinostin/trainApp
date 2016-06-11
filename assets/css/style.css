@@ -1,10 +1,49 @@
+* {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+
+.jumbotron {
+	margin:0;
+	border-radius: 0px;
+}
+
+.font {
+	
+
+}
+
+.jumbotron h1 {
+	font-family: 'DINNextLTPro-Medium', Arial, Helvetica, sans-serif;
+	color: #0069aa;
+}
+
+#currentTime {
+    font-family: 'liquid_crystalregular';
+    height: 100px;
+    line-height: 100px;
+    margin: auto 0;
+    padding: 0 50px;
+    background: #EEEEEE;
+    color: #0D194A;
+    text-align: center;
+    text-shadow: 0 0 2px #969696;
+}
+
+
+
 form {
 	padding: 30px;
 }
 
+.form-group label {
+	color: #E2231A;
+}
+
 .jumbotron {
-	margin-top: -50px;
-	background-color: #444444;
+	/*margin-top: -50px;*/
+	background-color: white;
 	color: white;
 }
 

@@ -8,50 +8,69 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
     <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-	
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="assets/js/jquery.fittext.js"></script>
 </head>
 <body>
-	<div class="container-fluid">
-		<div class="jumbotron text-center">
-			<h1>Capital Metro Rail Schedule</h1>
-			<p></p>
-		</div>
-		<div class="panel panel-primary">
-			<div class="panel-heading">Current Train Schedule</div>
-			<table class="table table-hover" id="newRow">
-				<tr>
-					<th>Train Name</th>
-					<th>Destination</th>
-					<th>Frequency (min)</th>
-					<th>Next Arrival</th>
-					<th>Minutes Away</th>
-				</tr>
-			</table>
-		</div>
-		<div class="panel panel-primary">
-			<div class="panel-heading">Add Train</div>
-			<form>
-				<div class="form-group">
-					<label>Train Name</label>
-					<input type="text" class="form-control" id="trainNameInput" placeholder="Train A">
+	<div class="wrapper">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="jumbotron text-center title">
+					<div class="container">
+						
+						<h1 class="font">Capital Metro Rail Schedule</h1>
+						<p></p>
+
+					</div>
 				</div>
-				<div class="form-group">
-					<label>Destination</label>
-					<input type="text" class="form-control" id="destinationInput" placeholder="Downtown">
+			</div>
+
+			<div class="row">
+				<div id="currentTime"></div>
+			</div>
+
+			<div class="row">
+				<div class="panel panel-primary">
+					<div class="panel-heading">Current Train Schedule</div>
+					<table class="table table-hover" id="newRow">
+						<tr>
+							<th>Train Name</th>
+							<th>Destination</th>
+							<th>Frequency (min)</th>
+							<th>Next Arrival</th>
+							<th>Minutes Away</th>
+						</tr>
+					</table>
 				</div>
-				<div class="form-group">
-					<label>First Train Time (military time)</label>
-					<input type="text" class="form-control" id="firstTrainInput" placeholder="HH:mm">
+			</div>
+
+			<div class="row">
+				<div class="panel panel-primary">
+					<div class="panel-heading">Add Train</div>
+					<form>
+						<div class="form-group">
+							<label>Train Name</label>
+							<input type="text" class="form-control" id="trainNameInput" placeholder="Train A">
+						</div>
+						<div class="form-group">
+							<label>Destination</label>
+							<input type="text" class="form-control" id="destinationInput" placeholder="Downtown">
+						</div>
+						<div class="form-group">
+							<label>First Train Time (military time)</label>
+							<input type="text" class="form-control" id="firstTrainInput" placeholder="HH:mm">
+						</div>
+						<div class="form-group">
+							<label>Frequency (in minutes)</label>
+							<input type="number" class="form-control" id="frequencyInput" placeholder="30">
+						</div>
+						<button type="submit" id="submit" class="btn btn-primary">Submit</button>
+					</form>
 				</div>
-				<div class="form-group">
-					<label>Frequency (in minutes)</label>
-					<input type="number" class="form-control" id="frequencyInput" placeholder="30">
-				</div>
-				<button type="submit" id="submit" class="btn btn-primary">Submit</button>
-			</form>
+			</div>
+
 		</div>
 	</div>
 
