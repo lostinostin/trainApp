@@ -1,0 +1,13 @@
+form {
+	padding: 30px;
+}
+
+.jumbotron {
+	margin-top: -50px;
+	background-color: #444444;
+	color: white;
+}
+
+th, tr {
+	text-align: center;
+}
