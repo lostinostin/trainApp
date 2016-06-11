@@ -27,7 +27,7 @@ $(document).ready(function() {
 		$('#' + key).remove();
 	})
 
-	if ((moment("05:15", "HH:mm").subtract(1, "years")) > moment()) {
+	if ((moment("05:15", "HH:mm").subtract(1, "years")) < moment()) {
 
 		$('#submit').on('click',function(){
 			trainName = $('#trainNameInput').val().trim();
